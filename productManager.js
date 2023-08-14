@@ -68,7 +68,7 @@ export default class ProductManager {
 
 
 
- productos.addProduct("producto prueba", "Este es un producto prueba", 200, "Sin imagen", "abc123", 25);
+ /* productos.addProduct("producto prueba", "Este es un producto prueba", 200, "Sin imagen", "abc123", 25);
 productos.addProduct("producto prueba2", "Este es un producto prueba", 250, "Sin imagen", "abc123", 25); 
 productos.addProduct("producto prueba3", "Este es un producto prueba", 200, "Sin imagen", "abc123", 25);  
  productos.addProduct("producto prueba4", "Este es un producto prueba", 1000, "Sin imagen", "abc123", 25);  

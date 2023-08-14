@@ -1,6 +1,7 @@
 import {promises as fs} from "fs"
 
 
+
 export default class ProductManager {
     constructor(){
         this.patch = "./productos.txt"
@@ -21,12 +22,14 @@ export default class ProductManager {
             code,
             stock,
             id: this.id,
+            
         }
 
         this.products.push(newProduct)
 
-        await fs.writeFile(this.patch, JSON.stringify(this.products));
+       await fs.writeFile(this.patch, JSON.stringify(this.products));
     };
+
 
     readProducts = async () => {
         let respuesta = await fs.readFile(this.patch, "utf-8")
@@ -68,7 +71,7 @@ export default class ProductManager {
 
 
 
- /* productos.addProduct("producto prueba", "Este es un producto prueba", 200, "Sin imagen", "abc123", 25);
+  /*productos.addProduct("producto prueba", "Este es un producto prueba", 200, "Sin imagen", "abc123", 25);
 productos.addProduct("producto prueba2", "Este es un producto prueba", 250, "Sin imagen", "abc123", 25); 
 productos.addProduct("producto prueba3", "Este es un producto prueba", 200, "Sin imagen", "abc123", 25);  
  productos.addProduct("producto prueba4", "Este es un producto prueba", 1000, "Sin imagen", "abc123", 25);  
@@ -76,5 +79,7 @@ productos.addProduct("producto prueba3", "Este es un producto prueba", 200, "Sin
  productos.addProduct("producto prueba6", "Este es un producto prueba", 300, "Sin imagen", "abc123", 25);  
  productos.addProduct("producto prueba7", "Este es un producto prueba", 123, "Sin imagen", "abc123", 25);  
  productos.addProduct("producto prueba8", "Este es un producto prueba", 9820, "Sin imagen", "abc123", 25);  
- productos.addProduct("producto prueba9", "Este es un producto prueba", 200, "Sin imagen", "abc123", 25);  
- productos.addProduct("producto prueba10", "Este es un producto prueba", 200, "Sin imagen", "abc123", 25);  
+ productos.addProduct("producto prueba9", "Este es un producto prueba", 200, "Sin imagen", "abc123", 25); 
+ productos.addProduct("producto prueba10", "Este es un producto prueba", 200, "Sin imagen", "abc123", 25); */
+
+ 
